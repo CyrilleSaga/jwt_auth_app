@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: auth
+
+# Database configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_auth_app
+    username: cyrille
+    password: root
+    driver-class-name: org.postgresql.Driver
+
+# JPA configuration
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+# Security configuration
+  security:
+    user:
+      name: admin
+      password: admin
+
+# Logging configuration
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+# JWT configuration
+jwt:
+  secret: 2b44b0b00fd822d8ce753e54dac3dc4e06c2725f7db930f3b9924468b5319423d7baa5ef5fbc414ca4b2e64700bad60c5a7c4
+  token:
+    expiration: 3600000
