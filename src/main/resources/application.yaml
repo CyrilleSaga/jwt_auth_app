@@ -15,12 +15,6 @@ spring:
     hibernate:
       ddl-auto: update
 
-# Security configuration
-  security:
-    user:
-      name: admin
-      password: admin
-
 # Logging configuration
 logging:
   level:
