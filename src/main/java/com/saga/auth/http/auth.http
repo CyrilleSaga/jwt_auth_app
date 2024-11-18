@@ -1,0 +1,23 @@
+### Register user
+POST http://localhost:8080/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Cyrille",
+  "username": "admin",
+  "password": "root",
+  "roles": ["ADMIN"]
+}
+
+### Login user
+POST http://localhost:8080/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "root"
+}
+
+### Get users
+GET http://localhost:8080/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJBRE1JTiJdLCJzdWIiOiJhZG1pbiIsImlhdCI6MTczMTk0MTExNCwiZXhwIjoxNzMxOTQ0NzE0fQ.tEGJZSTY7vd1FflTjU8R592MCJL9t-LeqNICnqBk5Jg
